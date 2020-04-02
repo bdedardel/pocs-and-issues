@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf8">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <script src="/webjars/vue/2.6.11/dist/vue.min.js"></script>
+	  <script type="text/javascript" src="js/materialize.min.js"></script>
+      @componentRegistration
+      <style>
+.brand-logo {
+	font-size: 12px;
+}      
+      </style>
+    </head>
+    <body>	
+	<main id="main-vue" v-cloak>
+            @routeComponent
+        </main>
+        <script>        
+            new Vue({el: "#main-vue"});            
+            
+    	</script>
+    	<audio id="buzz-audio" src="/audio/buzz.mp3" preload="auto"></audio>
+	</body>
+</html>
